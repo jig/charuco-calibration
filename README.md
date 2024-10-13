@@ -8,7 +8,7 @@ You need a Charuco Board.
 
 Grab a bunch of images at high resolution on the Raspberry Pi Camera covering all the field of view.
 
-This command will result in about 60 images.
+This command will result in about 60 images:
 
 ```bash
 rpicam-still --timeout 120000 --timelapse 2000 -o image%04d.jpg
@@ -20,6 +20,6 @@ and move it to a fast computer (Python script tested on MacOS Sequoia):
 python ./calibration-charuco.py
 ```
 
-If the scripts fails at some image number, find the image file name for that number (marked with # prefix) and start over.
+If the script fails at some image number, find the image file name for that number (marked with # prefix) and start over.
 
-After a successful execution will end up with a YAML file similar to this [calibration_chessboard.yaml](./calibration_chessboard.yaml) and open two windows to show the comparison between original and undistorted image.
+After a successful execution it will end up with a YAML file similar to this [calibration_chessboard.yaml](./calibration_chessboard.yaml) and at the end it will open two windows to show the comparison between original and undistorted images.
