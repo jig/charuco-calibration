@@ -22,4 +22,4 @@ python ./calibration-charuco.py
 
 If the script fails at some image number, find the image file name for that number (marked with # prefix) and start over.
 
-After a successful execution it will end up with a YAML file similar to this [calibration_chessboard.yaml](./calibration_chessboard.yaml) and at the end it will open two windows to show the comparison between original and undistorted images.
+After a successful execution it will end up with a YAML file similar to this [calibration_chessboard.yaml](./calibration_chessboard.yaml) obtained from a Raspberry Pi Camera Module 3 (Infrared) and at the end it will open two windows to show the comparison between original and undistorted images.
